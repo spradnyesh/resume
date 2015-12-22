@@ -1,16 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Pradnyesh} % Your first name
+\familyname{Sawant} % Your last name
+
+\title{Curriculum Vitae}
+\mobile{(+91) 7208666924}
+\email{spradnyesh@gmail.com}
+% \homepage{http://spradnyesh.github.io}
+\extrainfo{@spradnyesh (github, google, yahoo, twitter, facebook, skype)}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%   INTRODUCTION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+To guide and mentor teams that build scalable and secure systems that are useful and/or entertaining to customers and also generate revenue for the company
+% To work on machine-learning and data-mining problems that provide interesting and useful insights which are useful for customers and also generate revenue for the company
+
+
 %----------------------------------------------------------------------------------------
 %   Key Skills and Achievements
 %----------------------------------------------------------------------------------------
 \section{Skillset}
 \cvitem {Languages}{Clojure, Clojurescript, Common Lisp, Javascript, Java, PHP, Python, Bash, Latex}
-\cvitem {Data mining}{Weka, Encog (Clojure with Java interop)}
+\cvitem {Machine Learning}{Weka, Encog (Clojure with Java interop)}
 \cvitem {Cloud/VPS}{Redhat OpenShift, Linode}
 \cvitem {Frameworks}{Luminus (Clojure), Restas (Common Lisp), Spring (J2EE), Symfony (PHP)}
 \cvitem {Libraries}{Om, Reagent, Bootstrap}
 \cvitem {Web-Servers}{Nginx, Hunchentoot (Common Lisp), Apache, JBoss}
 \cvitem {Databases}{MongoDB, PostgreSQL, MySQL, SQLite3}
 \cvitem {Agile}{Scrum, TDD}
-\cvitem {Tools}{spacemacs, org-mode, CIDER for clojure}
+% \cvitem {Tools}{spacemacs, org-mode, CIDER for clojure}
 
 \section{Achievements}
 \cvitem {}{
@@ -33,13 +92,13 @@
 \section{Gryffin Software Development LLP (Mumbai, India)}
 \cventry {Apr '2012 -- Present}{Solo-preneur (http://stox.gryff.in)}{}
          {}{Technology: Clojure + MongoDB + OpenShift + Bootstrap, Weka/Encog}
-         {As a solo-preneur, I had to look at all aspects of the project, both technical like ideation, implementation and testing, deployment, and others like registering the company, finance, advertising, etc. The project revolved around stock price predction and portfolio creation. I am successfully able to achieve about 90-95\% prediction accuracy for next day prices using the Weka toolkit.}
+         {As a solo-preneur, I have to look at all aspects of the project, both technical like ideation, implementation and testing, deployment, and others like registering the company, finance, advertising, etc. The project revolves around stock price predction and portfolio creation using latest cutting edge machine learning technologies. I am successfully able to achieve about 95\% prediction accuracy for next day prices using the Weka toolkit.}
 
 \section{Open Source Contributions}
 \cventry {Apr '2012 -- Present}{https://github.com/spradnyesh}{}{}{}
          {\begin{itemize}
-           \item Golb.in: a blogging system (including both editorial and frontend websites) written in common-lisp and having google-ads integration (view archives at https://web.archive.org/web/20141217075454/http://golb.in/)
-           \item cl-web-utils: a library of utilities that emerged out of golbin development. It has lots of utility functions for encryption, cron, datetime, database, email, google-ads integration, html, http, js, l10n (localization), memcache, pagination, images, etc
+           \item golbin: a blogging system (including both editorial and frontend websites) written in common-lisp and having google-ads integration (view archives at https://web.archive.org/web/20141217075454/http://golb.in/)
+           \item cl-web-utils: a library of utilities that emerged out of golbin development. It has lots of utility functions for encryption, cron, datetime, database, email, google-ads integration, html, http, js, l10n (localization), memcache, pagination, images, and more
            \item Contribution to existing projects
              \begin{itemize}
              \item encog-java-core
@@ -58,7 +117,7 @@
 server using J2EE technologies (Spring framework, JBoss, Informatica Power Center for
 ETL, etc). I functioned as the Engineering Manager for this project and the sole
 representative from HQ responsible for managing the outsourced team (Samsung Research,
-Poland) and releasing the server with good quality (around 900+ CI powered unit tests) on schedule. Some of the biggest challenges for me working in this project were finding a
+Poland (SRPOL)) and releasing the server with good quality (around 900+ CI powered unit tests) on schedule. Some of the biggest challenges for me working in this project were finding a
 common ground between 2 radically different and opposing cultures (Korean and Polish),
 and also drawing up the business and logic requirements from an old and undocumented, but
 in service, codebase. I was also responsible for the smooth migration of codebase and
@@ -73,7 +132,7 @@ guiding and managing SDC team members.}
          {Team size: 4+3}{Technology: LAMP}
          {I worked as the Engineering Manager in this project and had 10 people working as my team.
 We were able to release 5 Cars websites (for DE, ES, FR, GB and IT) end-to-end within about 7
-weeks including feeds processing. The websites were a set of the Autos US version (below).}
+weeks including feeds processing. The websites were a subset of the Autos US version (below).}
 \cventry {Mar '2011 -- Dec '2011}{Autos}{http://autos.yahoo.com/news/}
          {Team size: 4+2}{Technology: LAMP}
          {This project was an attempt to add a magazine like look, using articles, photos, videos, etc., to
@@ -111,7 +170,7 @@ them.}
 of the technical trainers team (python, globalization).}
 
 \section{Associate Systems Analyst, Nse.iT, (Mumbai, India)}
-\cventry {2003 -- 2005}{PRISM}{}{}{Technology: C}{}
+\cventry {2003 -- 2005}{Parallel RISk Management (PRISM)}{}{}{Technology: C, Java}{}
 
 %----------------------------------------------------------------------------------------
 %   EDUCATION SECTION
@@ -123,3 +182,5 @@ of the technical trainers team (python, globalization).}
 \cventry{1999 -- 2003}{Bachelors of Engineering}{Mumbai University}{Mumbai}{\textit{64.36\%}}{Information Technology}
 \subsection{M. Tech. Project}
 \cventry{2006 -- 2007}{Fault Tolerance in a Server Cluster Backend for Thin Client Environment}{}{}{}{}
+
+\end{document}

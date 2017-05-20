@@ -14,6 +14,13 @@
     \tableofcontents[currentsection]
   \end{frame}
 }
+\AtBeginSubsection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
 
 %% --------------------------------------------------
 %% title page info
@@ -38,7 +45,7 @@
 
 %% -------------------------
 %% About Me
-\section{Who am I?}
+\section{About Me}
 \begin{frame}
   \frametitle{My Family}
   \includegraphics[height=5.4cm,width=10.8cm]{IMG_20160618_175653_HDR.jpg}
@@ -58,16 +65,16 @@
   \end{tabular}
 \end{frame}
 \begin{frame}
-  \frametitle{Growth?}
+  \frametitle{Growth}
   \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-19_08-08-01.png}
 
   more than 10x growth between 2005 and 2017 (12 years)
 \end{frame}
 \begin{frame}
-  \frametitle{Lessons learned}
-  \begin{itemize}
-  \item<1-1> Investment in career will outperform any other investment! -- anonymous
-  \item<2-2> The only people really interested in your career are yourself and your mother. -- Carol Bartz (Former CEO of Yahoo!)
+  \frametitle{Lessons Learned}
+  \begin{itemize}[<+->]
+  \item Investment in career will outperform any other investment! -- anonymous
+  \item The only people really interested in your career are yourself and your mother. -- Carol Bartz (Former CEO of Yahoo!)
   \end{itemize}
 \end{frame}
 
@@ -77,59 +84,128 @@
 %% ----------
 \subsection{Introduction}
 \begin{frame}
-  \frametitle{This is the first slide}
-  Content goes here
-\end{frame}
-\begin{frame}
-  \frametitle{This is the second slide}
-  \framesubtitle{A bit more information about this}
-  More content goes here
+  \frametitle{Introduction}
+  \begin{itemize}[<+->]
+  \item Stock Market
+  \item Prediction of time-series data using Machine Learning techniques
+  \end{itemize}
 \end{frame}
 %% ----------
 \subsection{Product : what}
 \begin{frame}
-  \frametitle{This is the first slide}
-  Content goes here
+  \frametitle{Home Page}
+  \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-34-04.png}
 \end{frame}
 \begin{frame}
-  \frametitle{This is the second slide}
-  \framesubtitle{A bit more information about this}
-  More content goes here
+  \frametitle{Justdial}
+  \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-34-30.png}
+\end{frame}
+\begin{frame}
+  \frametitle{GKWL Limited}
+  \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-36-44.png}
+\end{frame}
+\begin{frame}
+  \frametitle{Shrenuj}
+  \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-36-50.png}
 \end{frame}
 %% ----------
 \subsection{Product : how}
 \begin{frame}
-  \frametitle{This is the first slide}
-  Content goes here
+  \frametitle{Server Architecture}
+  \includegraphics[height=7.4cm,width=10.8cm]{stox_architecture.png}
 \end{frame}
 \begin{frame}
-  \frametitle{This is the second slide}
-  \framesubtitle{A bit more information about this}
-  More content goes here
+  \frametitle{Data Flow Sequence}
+  \begin{enumerate}
+  \item \textit{ML master server}
+    \begin{enumerate}
+    \item fetch today's trading data from finance.yahoo.com
+    \item normalize data and stores in DB
+    \item trigger \textit{ML worker server}s to wake up and start processing data
+    \end{enumerate}
+  \item all \textit{ML worker server}s do predictions from models that were previously generated and stored
+  \item once all processing is done, predicted data is moved from \textit{backend DB} to \textit{frontend DB}. this step is done \textit{manually} by me
+  \item \textit{frontend app server} shows this data to clients
+  \end{enumerate}
+\end{frame}
+\begin{frame}
+  \frametitle{Technologies Used}
+    \begin{itemize}
+    \item clojure(script), Postgresql DB
+    \item http://tinyurl.com/andrewngcoursera (Andrew Ng's coursera lectures on ML)
+    \item ML libraries used
+      \begin{itemize}
+      \item Weka (http://www.cs.waikato.ac.nz/ml/weka/)
+      \item Encog (http://www.heatonresearch.com/encog/)
+      \end{itemize}
+    \item currently popular ML libraries
+      \begin{itemize}
+      \item Caffe (http://caffe.berkeleyvision.org/)
+      \item Keras (https://keras.io/ (high level UI over Theano, TensorFlow))
+      \item Theano (http://www.deeplearning.net/software/theano/)
+      \item TensorFlow (https://www.tensorflow.org/, created by Google)
+      \item Torch (http://torch.ch/, used by Facebook)
+      \end{itemize}
+    \end{itemize}
 \end{frame}
 %% ----------
-\subsection{Product : learnings}
+\subsection{Product : lessons}
 \begin{frame}
-  \frametitle{This is the first slide}
-  Content goes here
+  \frametitle{Machine Learning is hard to get right!}
+  \includegraphics[height=5.4cm,width=5.4cm]{machine_learning.png}
+
+https://xkcd.com/1838/
 \end{frame}
 \begin{frame}
-  \frametitle{This is the second slide}
-  \framesubtitle{A bit more information about this}
-  More content goes here
+  \frametitle{Lessons Learned}
+  \begin{itemize}
+  \item it is a great BTP or MTP or maybe even a PhD project
+  \item extremely difficult to monetize unless you have a \textbf{team} of
+    \begin{itemize}
+    \item ML experts
+    \item domain experts (for validating models)
+    \item finance and marketing/sales (for monetization)
+    \end{itemize}
+  \item<2-> do \textbf{NOT} do it alone
+  \end{itemize}
 \end{frame}
 
 %% -------------------------
 %% Stuff I wish I knew at the begining of my career
 \section{Stuff I wish I knew at the begining of my career}
 \begin{frame}
-  \frametitle{This is the first slide}
-  Content goes here
+  \begin{itemize}
+  \item linux (mandatory for the software engineer)
+  \item there is always something better out there
+    \begin{itemize}
+    \item c -$>$ java -$>$ python -$>$ php/js -$>$ common lisp -$>$ clojure
+    \item notepad -$>$ vim -$>$ emacs
+    \item manual testing -$>$ automated testing -$>$ continuous integration
+    \end{itemize}
+  \item don't underestimate yourself (you can do anything you wish to; take risks)
+  \item don't try to do everything yourself (ask for help / collaborate)
+  \item invest in your career
+  \end{itemize}
 \end{frame}
 \begin{frame}
-  \frametitle{This is the second slide}
-  \framesubtitle{A bit more information about this}
-  More content goes here
+  read lots of books (fiction and non-fiction)
+
+  some books that shaped me:
+  \begin{itemize}
+  \item Getting Things Done -- David Allen
+  \item Mindset -- Carol Dweck
+  \item Rich Dad Poor Dad -- Robert Kiyosaki
+  \item Power of habits -- Charles Duhigg
+  \item Peak -- Anders Ericsson
+  \item Fountainhead -- Ayn Rand
+  \item Hooked -- Nir Eyal (very highly recommended if you want to build products)
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{The most important thing in this whole talk}
+  \includegraphics[height=5.4cm,width=10.8cm]{Screenshot_2017-05-20-09-10-52-736.png}
+
+  http://jamesclear.com/the-1-percent-rule
 \end{frame}
 
 \end{document}

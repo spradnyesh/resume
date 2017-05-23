@@ -38,44 +38,26 @@
 %% title page is actually shown here
 \frame{\titlepage}
 
-\begin{frame}
-  \frametitle{The real title}
-  Things I wish someone would have told me at the begining of my career ;)
-\end{frame}
-
 %% -------------------------
 %% About Me
 \section{About Me}
-\begin{frame}
-  \frametitle{My Family}
-  \includegraphics[height=5.4cm,width=10.8cm]{IMG_20160618_175653_HDR.jpg}
-\end{frame}
+%% \begin{frame}
+%%   \frametitle{My Family}
+%%   \includegraphics[height=5.4cm,width=10.8cm]{IMG_20160618_175653_HDR.jpg}
+%% \end{frame}
 \begin{frame}
   \frametitle{Education and Career}
   \begin{tabular}{ l  l  l  l }
     \textbf{From} & \textbf{To} & \textbf{What} & \textbf{Where}\\
     & & & \\
-    1999 & 2003 & Student & B.E. @ Mumbai University\\
-    2003 & 2005 & Assoc. Software Analyst & Nse.iT\\
+    %% 1999 & 2003 & Student & B.E. @ Mumbai University\\
+    %% 2003 & 2005 & Assoc. Software Analyst & Nse.iT\\
     2005 & 2007 & Student & MTech @ IITG\\
     2007 & 2012 & Principal Engineer & Yahoo! SDC\\
     2012 & 2014 & Engineering Manager & Samsung Electronics (HQ)\\
     2014 & 2016 & Founder & Gryff!n SD LLP\\
     2016 & Present & Head of Engineering & Mindseed Preschool\\
   \end{tabular}
-\end{frame}
-\begin{frame}
-  \frametitle{Growth}
-  \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-19_08-08-01.png}
-
-  more than 10x growth between 2005 and 2017 (12 years)
-\end{frame}
-\begin{frame}
-  \frametitle{Lessons Learned}
-  \begin{itemize}[<+->]
-  \item Investment in career will outperform any other investment! -- anonymous
-  \item The only people really interested in your career are yourself and your mother. -- Carol Bartz (Former CEO of Yahoo!)
-  \end{itemize}
 \end{frame}
 
 %% -------------------------
@@ -90,8 +72,9 @@
   \item Prediction of time-series data using Machine Learning techniques
   \end{itemize}
 \end{frame}
+
 %% ----------
-\subsection{Product : what}
+\subsection{Gryff!n : what}
 \begin{frame}
   \frametitle{Home Page}
   \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-34-04.png}
@@ -100,16 +83,17 @@
   \frametitle{Justdial}
   \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-34-30.png}
 \end{frame}
-\begin{frame}
-  \frametitle{GKWL Limited}
-  \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-36-44.png}
-\end{frame}
+%% \begin{frame}
+%%   \frametitle{GKWL Limited}
+%%   \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-36-44.png}
+%% \end{frame}
 \begin{frame}
   \frametitle{Shrenuj}
   \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-20_07-36-50.png}
 \end{frame}
+
 %% ----------
-\subsection{Product : how}
+\subsection{Gryff!n : how}
 \begin{frame}
   \frametitle{Server Architecture}
   \includegraphics[height=7.4cm,width=10.8cm]{stox_architecture.png}
@@ -130,26 +114,136 @@
 \end{frame}
 \begin{frame}
   \frametitle{Technologies Used}
+  \begin{itemize}
+  \item clojure(script), Postgresql DB
+  \item ML libraries used
     \begin{itemize}
-    \item clojure(script), Postgresql DB
-    \item http://tinyurl.com/andrewngcoursera (Andrew Ng's coursera lectures on ML)
-    \item ML libraries used
-      \begin{itemize}
-      \item Weka (http://www.cs.waikato.ac.nz/ml/weka/)
-      \item Encog (http://www.heatonresearch.com/encog/)
-      \end{itemize}
-    \item currently popular ML libraries
-      \begin{itemize}
-      \item Caffe (http://caffe.berkeleyvision.org/)
-      \item Keras (https://keras.io/ (high level UI over Theano, TensorFlow))
-      \item Theano (http://www.deeplearning.net/software/theano/)
-      \item TensorFlow (https://www.tensorflow.org/, created by Google)
-      \item Torch (http://torch.ch/, used by Facebook)
-      \end{itemize}
+    \item Weka (http://www.cs.waikato.ac.nz/ml/weka/)
+    \item Encog (http://www.heatonresearch.com/encog/)
     \end{itemize}
+  \end{itemize}
 \end{frame}
+
 %% ----------
-\subsection{Product : lessons}
+\subsection{Let's dig deeper}
+\subsubsection{Stock Market}
+\begin{frame}
+  \frametitle{Stock Market basics}
+  \begin{itemize}[<+->]
+  \item \textbf{OLHC} : Open, Low, High, Close
+  \item Types of trading
+    \begin{itemize}
+    \item Intra-day
+    \item Short term (few days)
+    \item Intermediate term (few weeks/months)
+    \item Long term (few years)
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Types of analysis}
+  \begin{itemize}[<+->]
+  \item Fundamental
+    \begin{itemize}
+    \item \textbf{Why} is more important than \textit{What}
+    \item Warren Buffet style
+    \end{itemize}
+  \item Technical
+    \begin{itemize}
+    \item \textbf{What} is more important than \textit{Why}
+    \item everyone else ;)
+    \item very useful for ML approach
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Technical analysis}
+  http://www.investopedia.com/university/technical/
+
+  \includegraphics[width=10.8cm]{4new.jpg}
+\end{frame}
+\begin{frame}
+  \frametitle{Technical analysis techniques}
+  \begin{itemize}
+  \item Candle stick graphs
+  \item Trendlines
+  \item Channels
+  \item Support and Resistance
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Chart patterns : Head and Shoulders}
+  \includegraphics[width=10.8cm]{22new.jpg}
+\end{frame}
+\begin{frame}
+  \frametitle{Chart patterns : Triangles}
+  \includegraphics[width=10.8cm]{25new.jpg}
+\end{frame}
+%% \begin{frame}
+%%   \frametitle{Chart patterns : Moving Averages (MA and EMA)}
+%%   \includegraphics[width=10.8cm]{17new.jpg}
+%% \end{frame}
+%% \begin{frame}
+%%   \frametitle{Chart patterns : Relative Strength Index (RSI)}
+%%   \includegraphics[width=10.8cm]{20new.jpg}
+%% \end{frame}
+
+\subsubsection{Machine Learning}
+\begin{frame}
+  \frametitle{Categories}
+  \begin{itemize}
+  \item Supervised vs Unsupervised
+  \item Regression vs Classification
+  \item Clustering
+  \item Recommendation
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Neural Networks (NN)}
+  \includegraphics[height=4.4cm]{tikz11.png}
+  \begin{itemize}
+  \item Convoluted neural networks (CNN)
+  \item Recurrent neural networks (RNN)
+  \item Deep learning (many many hidden layers)
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{Classify handwritten digits : magic - 1}
+  \includegraphics[height=5.4cm,width=10.8cm]{tikz0.png}
+\end{frame}
+\begin{frame}
+  \frametitle{Classify handwritten digits : magic - 2}
+  \includegraphics[height=5.4cm,width=10.8cm]{screenshot_2017-05-23_13-10-52.png}
+\end{frame}
+\begin{frame}
+  \frametitle{Classify handwritten digits : input}
+  http://neuralnetworksanddeeplearning.com/chap1.html
+
+  \includegraphics[width=10.8cm]{digits.png}
+\end{frame}
+\begin{frame}
+  \frametitle{Classify handwritten digits : output}
+  \includegraphics[width=10.8cm]{digits_separate.png}
+\end{frame}
+\begin{frame}
+  \frametitle{Classify handwritten digits : network}
+  \includegraphics[height=5.4cm,width=10.8cm]{tikz12.png}
+\end{frame}
+\begin{frame}
+  \frametitle{Currently popular ML libraries}
+http://tinyurl.com/andrewngcoursera (Andrew Ng's coursera lectures on ML)
+
+  \begin{itemize}
+  \item Caffe (http://caffe.berkeleyvision.org/)
+  \item Keras (https://keras.io/ (high level UI over Theano, TensorFlow))
+  \item Theano (http://www.deeplearning.net/software/theano/)
+  \item TensorFlow (https://www.tensorflow.org/, created by Google)
+  \item Torch (http://torch.ch/, used by Facebook)
+  \end{itemize}
+\end{frame}
+
+%% ----------
+\subsection{Gryff!n : lessons}
 \begin{frame}
   \frametitle{Machine Learning is hard to get right!}
   \includegraphics[height=5.4cm,width=5.4cm]{machine_learning.png}
@@ -174,8 +268,8 @@ https://xkcd.com/1838/
 %% Stuff I wish I knew at the begining of my career
 \section{Stuff I wish I knew at the begining of my career}
 \begin{frame}
-  \begin{itemize}
-  \item linux (mandatory for the software engineer)
+  \begin{itemize}[<+->]
+  \item linux (mandatory for a software engineer)
   \item there is always something better out there
     \begin{itemize}
     \item c -$>$ java -$>$ python -$>$ php/js -$>$ common lisp -$>$ clojure
@@ -184,7 +278,7 @@ https://xkcd.com/1838/
     \end{itemize}
   \item don't underestimate yourself (you can do anything you wish to; take risks)
   \item don't try to do everything yourself (ask for help / collaborate)
-  \item invest in your career
+  \item invest in your career (The only people really interested in your career are yourself and your mother. -- Carol Bartz (Former CEO of Yahoo!))
   \end{itemize}
 \end{frame}
 \begin{frame}

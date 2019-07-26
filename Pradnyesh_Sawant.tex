@@ -42,7 +42,7 @@
 \mobile{(+91) 7208666924}
 \email{spradnyesh@gmail.com}
 % \homepage{http://spradnyesh.github.io}
-\extrainfo{@spradnyesh (github, gmail, hangouts, yahoo, twitter, skype)} %, facebook)}
+\extrainfo{@spradnyesh (github, hangouts, yahoo, twitter, skype)} %, facebook)}
 
 %----------------------------------------------------------------------------------------
 
@@ -71,70 +71,69 @@ Build and mentor teams to build products that make customers happy and the compa
 \section{Achievements}
 \cvitem {}{
 \begin{itemize}
-\item Built the first BAU Games in flipkart with 165k simultaneous users and 1.39M gameplays in a single day
+\item Built the first BAU Games in flipkart with 172k simultaneous users and 1.39M gameplays in a single day
 \item Built whole engineering team of 11 members from scratch at Mindseed Preschool
 \item Single-handedly built and delivered a hybrid mobile app + backend + cloud hosting and storage from scratch in 5 months at Mindseed Preschool
-\item Registered and setup a software development company and built product using machine learning (ML) technologies and functional programming
+\item Registered and setup a software development company and built product for prediction of time series data using machine learning technologies and functional programming
 \item Won the best employee award in the ``Store Development Group'' in 2nd half of 2013 at Samsung Electronics HQ
 \item My team won the Superstar award, which is the most coveted award at Yahoo! (worldwide), for the EntertainmentLite project
-\item Built http://maktoob.omg.yahoo.com which was the 2nd completely homegrown RTL (Arabic) website in Yahoo!
+% \item Built http://maktoob.omg.yahoo.com which was the 2nd completely homegrown RTL (Arabic) website in Yahoo!
 \item My team was awarded the Odyssey award for excellence in engineering efforts at Yahoo! for the http://360plus.yahoo.com project
-\item Topped in 3 of 4 semesters and ranked 2nd overall in MTech at IIT Guwahati
+\item Topped in 3 out of 4 semesters and ranked 2nd overall in MTech at IIT Guwahati
 \end{itemize}}
 
-\section{Skillset}
-\cvitem {\textbf{Languages}}{Clojure, Clojurescript, Common Lisp, Javascript, Python, Java, PHP, Bash, Latex}
-\cvitem {\textbf{Frameworks}}{Luminus (Clojure), re-frame (Clojurescript), Django (Python)}%, Spring (J2EE), Symfony (PHP), Restas (Common Lisp)
-\cvitem {\textbf{Mobile}}{Cordova, Expo, React Native (via re-frame)}
-\cvitem {\textbf{Cloud/VPS}}{Linode, Redhat OpenShift, AWS (S3, EC2)}
-\cvitem {\textbf{ML}}{Weka, Encog (both using Clojure with Java interop)}
-\cvitem {\textbf{Libraries}}{Reagent (react via Clojurescript), Materialize, Bootstrap, Quicklisp}
-\cvitem {\textbf{Web-Servers}}{Nginx, Hunchentoot (Common Lisp), Apache, JBoss}
-\cvitem {\textbf{Databases}}{MongoDB, PostgreSQL, MySQL, SQLite3}
-\cvitem {\textbf{Agile}}{Scrum, TDD}
-\cvitem {\textbf{Tools}}{spacemacs, org-mode, CIDER (Clojure)}
+% \section{Skillset}
+% \cvitem {\textbf{Languages}}{Clojure, Clojurescript, Common Lisp, Javascript, Python, Java, PHP, Bash, Latex}
+% \cvitem {\textbf{Frameworks}}{Luminus (Clojure), re-frame (Clojurescript), Django (Python)}%, Spring (J2EE), Symfony (PHP), Restas (Common Lisp)
+% \cvitem {\textbf{Mobile}}{Cordova, Expo, React Native (via re-frame)}
+% \cvitem {\textbf{Cloud/VPS}}{Linode, Redhat OpenShift, AWS (S3, EC2)}
+% \cvitem {\textbf{ML}}{Weka, Encog (both using Clojure with Java interop)}
+% \cvitem {\textbf{Libraries}}{Reagent (react via Clojurescript), Materialize, Bootstrap, Quicklisp}
+% \cvitem {\textbf{Web-Servers}}{Nginx, Hunchentoot (Common Lisp), Apache, JBoss}
+% \cvitem {\textbf{Databases}}{MongoDB, PostgreSQL, MySQL, SQLite3}
+% \cvitem {\textbf{Agile}}{Scrum, TDD}
+% \cvitem {\textbf{Tools}}{spacemacs, org-mode, CIDER (Clojure)}
 
 %----------------------------------------------------------------------------------------
 %   WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-\newpage{}
 % \section{Work Experience}
 \section{Flipkart Internet pvt ltd (Bangalore, India)}
 \cventry {18/Aug -- Present}{Engineering Manager}{https://www.flipkart.com}
          {Technology: Java (Dropwizard)}{Team size: 11}
-         {I am currently leading 3 projects
+         {\begin{itemize}
+           \item \textbf{Games}: We currently have 2 live games, \textit{Quiz Up} (peak of 172k simultaneous game plays) and \textit{Guess What} (1.39M game plays in a single day). Some of the big challenges in building these were related to how to
            \begin{itemize}
+           \item include a game in an e-commerce app while having strict limitations on the app size
+           \item synchronize time between server and client so that every user playing \textit{Quiz Up} gets the exact same question at the exact same time
+           \item detect and avoid fraudulent behavior
+           \end{itemize}
            \item \textbf{Communication Platform}: This is the central platform via which we send all external communications to flipkart users, sellers, etc through the channels of \textit{Push Notification}, \textit{Email},  \textit{SMS}, \textit{WhatsApp}, \textit{Web Push} and \textit{In App}. This is a super huge scale project where we send upwards of 1 billion PNs and 80 million emails in a single day (during BBD). This system includes a \textit{Frequency Capping System} and \textit{Communication Preferences} that act as guardrails against user fatigue.
-           \item \textbf{Games}: We currently have 2 live games, \textit{Quiz Up} (peak of 165k simultaneous game plays) and \textit{Guess What} (1.39M game plays in a single day).
            \item \textbf{App Referrals}: This is the revival of an existing project that was taken down due to massive frauds. The revamp included, besides better rules for fraud detection, development of a deferred incentivization policy via a state machine implementation.
            \end{itemize}}
 
+\newpage{}
 \section{Mindseed Preschool (Mumbai, India)}
 \cventry {16/Feb -- 18/Aug}{Head of Engineering}{https://www.mindseed.in}
          {Technology: Clojure/Clojurescript + MongoDB + Linode + Cordova + expo (react-native)}{Team size: 11}
-         {At Mindseed Preschool, the best preschool in India, we believe in personalizing education for every child. This vision can only be realized at scale via technology, where my contribution was
-           \begin{itemize}
-           \item I was the first engineer in the company and built a team from scratch to build the whole eco-system to facilitate \textit{personalized learning} for each child
-           \item Being the part of Senior Management, I contributed in company level planning and implementation and also presentations to VCs
-           \end{itemize}
-           I also headed the ideation and development of a math based mobile game inspired by \textit{PokemonGo} (location awareness + Augmented Reality (AR)) using \textit{Unity3d} game engine and \textit{Python - Django} framework}
+         {At Mindseed Preschool, the best preschool in India, we believe in personalizing education for every child. I was the first engineer in the company and built a team from scratch to build the whole eco-system to facilitate \textit{personalized learning} for each child. I also headed the ideation and development of a math based mobile game inspired by \textit{PokemonGo} (location awareness + Augmented Reality (AR)) using \textit{Unity3d} game engine and \textit{Python - Django} framework}
 
 \section{Gryffin Software Development LLP (Mumbai, India)}
 \cventry {14/Apr -- 16/Jan}{Solo-preneur (http://stox.gryff.in)}{}
          {}{Technology: Clojure + MongoDB + OpenShift + Bootstrap, Weka/Encog}
          {The project involves stock price predction and portfolio creation using latest cutting edge machine learning technologies and functional programming techniques. I was successfully able to achieve about 95\% prediction accuracy for next day prices using the Weka toolkit. As a solo-preneur, I had to look at all aspects of the project, both technical like ideation, implementation and testing, deployment, and others like registering the company, finance, advertising, etc.}
 
-\section{Open Source Contributions}
-\cventry {}{https://github.com/spradnyesh}{}{}{}
-         {\begin{itemize}
-           \item golbin: a blogging system (including both editorial and frontend websites) written in common-lisp and having google-ads integration (view archives at https://web.archive.org/web/20141217075454/http://golb.in/)
-           \item cl-web-utils: a library of utilities that emerged out of golbin development. It has lots of utility functions for encryption, cron, datetime, database, email, google-ads integration, html, http, js, l10n (localization), memcache, pagination, images, and more
-           \item Contribution to existing projects: \textit{encog-java-core}, \textit{encog-java-workbench}, \textit{clojure-cartridge}, \textit{luminus}, \textit{luminus-template}, \textit{stumpwm-contrib}
-           \item hobby projects: \textit{clj-encog-examples}, \textit{mc-sentimeter}, \textit{cljs-games}, \textit{bulk-trader}, \textit{cl-project-euler}, \textit{clj-project-euler}
-         \end{itemize}}
+% \section{Open Source Contributions}
+% \cventry {}{https://github.com/spradnyesh}{}{}{}
+%          {\begin{itemize}
+%            \item golbin: a blogging system (including both editorial and frontend websites) written in common-lisp and having google-ads integration (view archives at https://web.archive.org/web/20141217075454/http://golb.in/)
+%            \item cl-web-utils: a library of utilities that emerged out of golbin development. It has lots of utility functions for encryption, cron, datetime, database, email, google-ads integration, html, http, js, l10n (localization), memcache, pagination, images, and more
+%            \item Contribution to existing projects: \textit{encog-java-core}, \textit{encog-java-workbench}, \textit{clojure-cartridge}, \textit{luminus}, \textit{luminus-template}, \textit{stumpwm-contrib}
+%            \item hobby projects: \textit{clj-encog-examples}, \textit{mc-sentimeter}, \textit{cljs-games}, \textit{bulk-trader}, \textit{cl-project-euler}, \textit{clj-project-euler}
+%          \end{itemize}}
 % \cventry {}{https://stackoverflow.com/cv/spradnyesh}{}{}{}{}
 
-\newpage{}
+% \newpage{}
 \section{Senior Engineer (S5 -- level 5), Samsung Electronics (Suwon, S. Korea)}
 \cventry {12/Apr -- 14/Mar}{In-App-Purchase Server for Samsung Apps}{}
          {Team size: 20}{Technology: J2EE}
@@ -144,23 +143,20 @@ Build and mentor teams to build products that make customers happy and the compa
 %% \cventry {Jul '07 -- Mar '12}{Yahoo! Frontpage}{http://yahoo.com}
 %%          {Team size: 10}{Technology: LAMP}
 %%          {}
-\cventry {-- 12/Mar}{Autos, Cars}{http://autos.yahoo.com/news/} %, http://uk.cars.yahoo.com/motorshow/frankfurt/}
-         {Team size: 6+5}{}
-         {I worked as the Principal Engineer in this project and had 10 people working as my team. We were able to release 5 Cars websites (for DE, ES, FR, GB and IT) end-to-end within about 7 weeks including feeds processing. The websites were a subset of the Autos US version.}
+\cventry {07/Jul -- 12/Mar}{Autos, Cars}{http://autos.yahoo.com/news/, http://uk.cars.yahoo.com/motorshow/frankfurt/}
+         {Team size: 6+5}{}{}
 \cventry {}{EntertainmentLite}{http://id.omg.yahoo.com}
-         {Team size: 7+3}{}
-         {This project is a collection of 6 entertainment related websites (*.omg.yahoo.com built for Indonesia, Brazil, India, Middle-East, Mexico and Espanol); both the projects and the platform were built in parallel. In this project I worked on the performance analysis and continuous integration (CI) of both EntertainmentLite and LifestyleLite and made architectural decisions for the common modules and website specific components.} % I was responsible for managing the sprints and ensuring that the team delivered quality code within the deadlines. In addition, I managed all inter-team collaboration, feeds related issues and editorial training. I was also largely responsible for the RTL-ization of the middle-east website.}
+         {Team size: 7+3}{}{}
 \cventry {}{Digu}{http://digu.yahoo.com}
-         {Team size: 10+6}{}
-         {}
+         {Team size: 10+6}{}{}
 \cventry {}{Spotm}{http://in.spotm.yahoo.com}
          {Team size: 4+4}{Technology: LAMP}{}
 \cventry {}{Vn Blogs}{http://360plus.yahoo.com}
          {Team size: 2}{Technology: LAMP}{}
 \cventry {}{Listit}{http://in.listit.yahoo.com}
          {Team size: 4+2}{Technology: LAMP}{}
-\cventry {07/Jul --}{Miscellaneous}{}{}{}
-         {I worked as part of the Globalization and FE Performance expert teams, and was a member of the technical trainers team (python, globalization).}
+% \cventry {}{Miscellaneous}{}{}{}
+%          {I worked as part of the Globalization and FE Performance expert teams, and was a member of the technical trainers team (python, globalization).}
 
 \section{Associate Systems Analyst, Nse.iT, (Mumbai, India)}
 \cventry {03--05}{Parallel RISk Management (PRISM)}{}{}{Technology: C, Java}{}
@@ -170,10 +166,9 @@ Build and mentor teams to build products that make customers happy and the compa
 %----------------------------------------------------------------------------------------
 
 \section{Academics}
-\subsection{Education}
 \cventry{05--07}{Masters of Technology (C.S.E.)}{IIT Guwahati}{Guwahati}{\textit{9.34 CPI}}{}
 \cventry{99--03}{Bachelors of Engineering (I.T.)}{Mumbai University}{Mumbai}{\textit{64.36\%}}{}
-\subsection{M. Tech. Project}
-\cventry{06--07}{Fault Tolerance in a Server Cluster Backend for Thin Client Environment}{}{}{}{}
+% \subsection{M. Tech. Project}
+% \cventry{06--07}{Fault Tolerance in a Server Cluster Backend for Thin Client Environment}{}{}{}{}
 
 \end{document}

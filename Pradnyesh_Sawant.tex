@@ -41,7 +41,7 @@
 \title{Curriculum Vitae}
 \mobile{(+91) 7208666924}
 \email{spradnyesh@gmail.com}
-% \homepage{http://spradnyesh.github.io}
+\homepage{https://spradnyesh.github.io}
 \extrainfo{@spradnyesh (github, hangouts, yahoo, twitter, skype)} %, facebook)}
 
 %----------------------------------------------------------------------------------------
@@ -51,33 +51,18 @@
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
-%   INTRODUCTION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Objective}
-% To guide and mentor teams that build scalable and secure systems that are useful and/or entertaining to customers and also generate revenue for the company
-% To work in the field of financial data analysis and prediction using data-mining and machine-learning technologies
-% To build scalable and secure systems that are useful and/or entertaining to customers and also generate revenue for the company (using functional/lisp-y languages)!
-% To work on machine-learning and data-mining problems that provide interesting and useful insights which are useful for customers and also generate revenue for the company
-% To design and develop expert systems (via machine-learning and data-mining technologies) using lisp-y languages like common-lisp and/or clojure
-% To build awesome products (using functional/lisp-y languages)!
-% To design and develop expert systems (via machine-learning and data-mining technologies) using functional languages like clojure and/or haskell
-Build and mentor teams to build products that make customers happy and the company profitable!
-
-
-%----------------------------------------------------------------------------------------
 %   Key Skills and Achievements
 %----------------------------------------------------------------------------------------
 \section{Achievements}
 \cvitem {}{
 \begin{itemize}
-\item Built the first BAU Games in flipkart with 172k simultaneous users and 1.39M gameplays in a single day
+\item Delivered 2 new games along with other cricital features like a revamped gamezone, live leaderboard, etc in 4 months while collaborating for the first time with an external vendor for UI part of the core gameplay
+\item Built the first daily games with monetary rewards in Flipkart with 172k simultaneous users and 1.39M gameplays in a single day
 \item Built whole engineering team of 11 members from scratch at Mindseed Preschool
 \item Single-handedly built and delivered a hybrid mobile app + backend + cloud hosting and storage from scratch in 5 months at Mindseed Preschool
 \item Registered and setup a software development company and built product for prediction of time series data using machine learning technologies and functional programming
 \item Won the best employee award in the ``Store Development Group'' in 2nd half of 2013 at Samsung Electronics HQ
 \item My team won the Superstar award, which is the most coveted award at Yahoo! (worldwide), for the EntertainmentLite project
-% \item Built http://maktoob.omg.yahoo.com which was the 2nd completely homegrown RTL (Arabic) website in Yahoo!
 \item My team was awarded the Odyssey award for excellence in engineering efforts at Yahoo! for the http://360plus.yahoo.com project
 \item Topped in 3 out of 4 semesters and ranked 2nd overall in MTech at IIT Guwahati
 \end{itemize}}
@@ -97,52 +82,66 @@ Build and mentor teams to build products that make customers happy and the compa
 %----------------------------------------------------------------------------------------
 %   WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-% \section{Work Experience}
 \section{Flipkart Internet pvt ltd (Bangalore, India)}
 \cventry {18/Aug -- Present}{Engineering Manager}{https://www.flipkart.com}
          {Technology: Java (Dropwizard)}{Team size: 11}
-         {\begin{itemize}
-           \item \textbf{Games}: We currently have 2 live games, \textit{Quiz Up} (peak of 172k simultaneous game plays) and \textit{Guess What} (1.39M game plays in a single day). Some of the big challenges in building these were related to how to
-           \begin{itemize}
-           \item include a game in an e-commerce app while having strict limitations on the app size
-           \item synchronize time between server and client so that every user playing \textit{Quiz Up} gets the exact same question at the exact same time
-           \item detect and avoid fraudulent behavior
-           \end{itemize}
-           \item \textbf{Communication Platform}: This is the central platform via which we send all external communications to flipkart users, sellers, etc through the channels of \textit{Push Notification}, \textit{Email},  \textit{SMS}, \textit{WhatsApp}, \textit{Web Push} and \textit{In App}. This is a super huge scale project where we send upwards of 1 billion PNs and 80 million emails in a single day (during BBD). This system includes a \textit{Frequency Capping System} and \textit{Communication Preferences} that act as guardrails against user fatigue.
-           \item \textbf{App Referrals}: This is the revival of an existing project that was taken down due to massive frauds. The revamp included, besides better rules for fraud detection, development of a deferred incentivization policy via a state machine implementation.
-           \end{itemize}}
+         {}
+\cvitem{}{\begin{itemize}
+            \item \textbf{Games}: We currently have 4 live games, 2 simultaneous (\textit{Quiz Up} and \textit{Crazy Cannon}) and 2 non simultaneous (\textit{Snake Smash} and \textit{Guess What}). These games run on a daily basis with real money rewards. Some of the biggest challenges in building these were
+            \begin{itemize}
+              \item include games in an e-commerce app while having strict limitations on the app size
+              \item point in time load to backend servers for simultaneous games at very high scale
+              \item synchronize time between server and client so that every user playing \textit{Quiz Up} and \textit{Crazy Cannon} gets the exact same question/layout at the exact same time and the winners are calculated immediately after the game ends based on their scores
+              \item detect and avoid fraudulent behavior
+              \item collaboration between 3 teams including an external vendor for the UI part of core gameplay
+            \end{itemize}
+          \end{itemize}}
+\cvitem{}{\begin{itemize}
+            \item \textbf{Communication Platform}: This is the central platform via which we send all external communications to Flipkart users, sellers, etc through the channels of \textit{Push Notification}, \textit{Email},  \textit{SMS}, \textit{WhatsApp}, \textit{Web Push} and \textit{In App}. This is a extremely high scale project where we send upwards of 1 billion PNs and 80 million emails in a single day (during BBD). This system includes a \textit{Frequency Capping System} and \textit{Communication Preferences} that act as guardrails against user fatigue.
+          \end{itemize}}
+\cvitem{}{\begin{itemize}
+            \item \textbf{App Referrals}: This is the revival of an existing project that was taken down due to massive frauds. The revamp includes, besides better rules for fraud detection, development of a deferred incentivization policy via a state machine implementation.
+          \end{itemize}}
+\cvitem{}{\begin{itemize}
+            \item As the \textbf{Engineering Manager}, some of my core responsibilities include
+            \begin{itemize}
+              \item define the project roadmap while working closely with the Product Manager
+              \item split the roadmap into quarterly chunks to define the OKRs
+              \item be responsible for the quality and timely delivery of OKR commitments
+              \item work with other teams to dependencies between projects
+              \item help each team member to define their development goals and mentor and work with them to help them achieve the same
+              \item calibrations and promotions
+              \item hiring
+            \end{itemize}
+          \end{itemize}}
 
-\newpage{}
 \section{Mindseed Preschool (Mumbai, India)}
 \cventry {16/Feb -- 18/Aug}{Head of Engineering}{https://www.mindseed.in}
          {Technology: Clojure/Clojurescript + MongoDB + Linode + Cordova + expo (react-native)}{Team size: 11}
          {At Mindseed Preschool, the best preschool in India, we believe in personalizing education for every child. I was the first engineer in the company and built a team from scratch to build the whole eco-system to facilitate \textit{personalized learning} for each child. I also headed the ideation and development of a math based mobile game inspired by \textit{PokemonGo} (location awareness + Augmented Reality (AR)) using \textit{Unity3d} game engine and \textit{Python - Django} framework}
 
 \section{Gryffin Software Development LLP (Mumbai, India)}
-\cventry {14/Apr -- 16/Jan}{Solo-preneur (http://stox.gryff.in)}{}
+\cventry {14/Apr -- 16/Jan}{Solopreneur (http://stox.gryff.in)}{}
          {}{Technology: Clojure + MongoDB + OpenShift + Bootstrap, Weka/Encog}
-         {The project involves stock price predction and portfolio creation using latest cutting edge machine learning technologies and functional programming techniques. I was successfully able to achieve about 95\% prediction accuracy for next day prices using the Weka toolkit. As a solo-preneur, I had to look at all aspects of the project, both technical like ideation, implementation and testing, deployment, and others like registering the company, finance, advertising, etc.}
+         {The project involves stock price prediction and portfolio creation using latest cutting edge machine learning technologies and functional programming techniques. I was successfully able to achieve about 95\% prediction accuracy for next day prices using the Weka toolkit. As a solopreneur, I had to look at all aspects of the project, both technical like ideation, implementation and testing, deployment, and others like registering the company, finance, advertising, etc.}
 
-% \section{Open Source Contributions}
-% \cventry {}{https://github.com/spradnyesh}{}{}{}
-%          {\begin{itemize}
-%            \item golbin: a blogging system (including both editorial and frontend websites) written in common-lisp and having google-ads integration (view archives at https://web.archive.org/web/20141217075454/http://golb.in/)
-%            \item cl-web-utils: a library of utilities that emerged out of golbin development. It has lots of utility functions for encryption, cron, datetime, database, email, google-ads integration, html, http, js, l10n (localization), memcache, pagination, images, and more
-%            \item Contribution to existing projects: \textit{encog-java-core}, \textit{encog-java-workbench}, \textit{clojure-cartridge}, \textit{luminus}, \textit{luminus-template}, \textit{stumpwm-contrib}
-%            \item hobby projects: \textit{clj-encog-examples}, \textit{mc-sentimeter}, \textit{cljs-games}, \textit{bulk-trader}, \textit{cl-project-euler}, \textit{clj-project-euler}
-%          \end{itemize}}
-% \cventry {}{https://stackoverflow.com/cv/spradnyesh}{}{}{}{}
+\newpage{}
+\section{Open Source Contributions}
+\cventry {}{https://github.com/spradnyesh}{}{}{}
+         {\begin{itemize}
+           \item golbin: a blogging system (including both editorial and frontend websites) written in common-lisp and having google-ads integration (view archives at https://web.archive.org/web/20140805073943/http://www.golb.in/)
+           \item cl-web-utils: a library of utilities that emerged out of golbin development. It has lots of utility functions for encryption, cron, datetime, database, email, google-ads integration, html, http, js, l10n (localization), memcache, pagination, images, and more
+           \item Contribution to existing projects: \textit{encog-java-core}, \textit{encog-java-workbench}, \textit{pupeno/to-jdbc-uri}, \textit{luminus}, \textit{luminus-template}, \textit{stumpwm-contrib}
+           \item hobby projects: \textit{clj-encog-examples}, \textit{mc-sentimeter}, \textit{cljs-games}, \textit{bulk-trader}, \textit{cl-project-euler}, \textit{clj-project-euler}
+         \end{itemize}}
+%% \cventry {}{https://stackoverflow.com/cv/spradnyesh}{}{}{}{}
 
-% \newpage{}
 \section{Senior Engineer (S5 -- level 5), Samsung Electronics (Suwon, S. Korea)}
 \cventry {12/Apr -- 14/Mar}{In-App-Purchase Server for Samsung Apps}{}
          {Team size: 20}{Technology: J2EE}
          {The project involved from scratch re-write of the ``In App Purchase'' part of Samsung Apps server using J2EE technologies (Spring framework, JBoss, Informatica Power Center for ETL, etc). I functioned as the Engineering Manager for this project and the sole representative from HQ responsible for managing the outsourced team (Samsung Research, Poland (SRPOL)) and releasing the server with good quality (around 900+ CI powered unit tests) on schedule. Some of the biggest challenges for me working in this project were finding a common ground between 2 radically different and opposing cultures (Korean and Polish), and also drawing up the business and logic requirements from an old and undocumented, but in service, codebase. I was also responsible for the smooth migration of codebase and knowledge from SRPOL to SDC, Korea towards the end of SRPOL contract; and later for guiding and managing SDC team members.}
 
 \section{Principal Engineer, Yahoo! SDC (Bangalore, India)}
-%% \cventry {Jul '07 -- Mar '12}{Yahoo! Frontpage}{http://yahoo.com}
-%%          {Team size: 10}{Technology: LAMP}
-%%          {}
 \cventry {07/Jul -- 12/Mar}{Autos, Cars}{http://autos.yahoo.com/news/, http://uk.cars.yahoo.com/motorshow/frankfurt/}
          {Team size: 6+5}{}{}
 \cventry {}{EntertainmentLite}{http://id.omg.yahoo.com}
@@ -155,8 +154,6 @@ Build and mentor teams to build products that make customers happy and the compa
          {Team size: 2}{Technology: LAMP}{}
 \cventry {}{Listit}{http://in.listit.yahoo.com}
          {Team size: 4+2}{Technology: LAMP}{}
-% \cventry {}{Miscellaneous}{}{}{}
-%          {I worked as part of the Globalization and FE Performance expert teams, and was a member of the technical trainers team (python, globalization).}
 
 \section{Associate Systems Analyst, Nse.iT, (Mumbai, India)}
 \cventry {03--05}{Parallel RISk Management (PRISM)}{}{}{Technology: C, Java}{}

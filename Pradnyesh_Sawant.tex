@@ -1,24 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same
-% directory as this .tex file. These files provide the resume style and themes
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %----------------------------------------------------------------------------------------
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
@@ -54,7 +33,7 @@
 %   Executive Summary
 %----------------------------------------------------------------------------------------
 \section{Executive Summary}
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+I am a self motivated individual working towards continuously improving my leadership skills to facilitate close collaboration between engineering teams, Product managers and Data teams to build awesome products and platforms! Most importantly, I have fun in the process and enjoy the journey :)
 
 %----------------------------------------------------------------------------------------
 %   Core Skills
@@ -62,12 +41,13 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 \section{Core Skills}
 \begin{multicols}{2}
     \begin{itemize}
-        \item item 1
-        \item item 2
-        \item item 3
-        \item item 4
-        \item item 5
-        \item item 6
+        \item 11+ years of handson experience and 3+ years as Engineering Manager
+        \item System design experience with medium to large scale software products
+        \item Ability to lead in a cross-functional team comprising of backend, UI and QA engineers, contractors and external vendors
+        \item Experience in collaborating with Product and Data teams
+        \item Excellent written and verbal communication skills
+        \item Good understanding of SDLC processes and methodologies
+        \item Experience in creating Individual Development Plans (IDP) and doing Performance Management
     \end{itemize}
 \end{multicols}
 
@@ -81,11 +61,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 \item Built the first daily games with real money rewards in \Colorhref{https://www.flipkart.com}{Flipkart} with \textit{peak DAU of 2M players making us one of the biggest casual gaming platforms in India}
 \item Built engineering team of 11 members from scratch at \Colorhref{https://blog.mindseed.in}{Mindseed Preschool}
 \item Single-handedly built and delivered a hybrid mobile app + backend + cloud hosting and storage from scratch in 5 months at \Colorhref{https://blog.mindseed.in}{Mindseed Preschool}
-\item Registered and setup a software development company and built product for prediction of time series data using machine learning technologies and functional programming
+\item Registered and setup a \Colorhref{https://www.zaubacorp.com/company/GRYFFIN-SOFTWARE-DEVELOPMENT-LLP/AAC-9108}{software development company} and built product for prediction of time series data using machine learning technologies and functional programming
 \item Won the best employee award in the ``Store Development Group'' in 2nd half of 2013 at Samsung Electronics HQ
 \item My team won the Superstar award, which is the most coveted award at Yahoo! (worldwide), for the EntertainmentLite project
 \item My team was awarded the Odyssey award for excellence in engineering efforts at Yahoo! for the http://360plus.yahoo.com project
-\item Topped in 3 out of 4 semesters and ranked 2nd overall in MTech at \Colorhref{http://www.iitg.ac.in/cse/}{IIT Guwahati, CSE Dept}
+\item Topped in 3 out of 4 semesters and ranked 2nd overall in MTech at \Colorhref{https://www.iitg.ac.in/cse/}{IIT Guwahati, CSE Dept}
 \end{itemize}}
 
 % \section{Skillset}
@@ -100,36 +80,35 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 % \cvitem {\textbf{Agile}}{Scrum, TDD}
 % \cvitem {\textbf{Tools}}{spacemacs, org-mode, CIDER (Clojure)}
 
+\newpage{}
 %----------------------------------------------------------------------------------------
 %   WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \section{Flipkart Internet pvt ltd (Bangalore, India)}
 \cventry {18/Aug -- Present}{Engineering Manager}{}
-         {Technology: Java (Dropwizard)}{Team size: 11}
-         {}
-\cvitem{}{\begin{itemize}
+         {Technology: Java, Mongo, HBase, Storm, Kafka, Redis}{Team size: 19}
+         {\begin{itemize}
             \item \textbf{Games}: We currently have 4 live games, 2 simultaneous (\textit{Quiz Up} and \textit{Crazy Cannon}) and 2 non simultaneous (\textit{Snake Smash} and \textit{Guess What}). These games run on a daily basis with real money rewards. Some of the biggest challenges in building these were
-            \begin{itemize}
-              \item include games in an e-commerce app while having strict limitations on the app size
-              \item point in time load to backend servers for simultaneous games at very high scale
-              \item synchronize time between server and client so that every user playing \textit{Quiz Up} and \textit{Crazy Cannon} gets the exact same question/layout at the exact same time and the winners are calculated immediately after the game ends based on their scores
-              \item detect and avoid fraudulent behavior
-              \item collaboration between 3 teams including an external vendor for the UI part of core gameplay
-            \end{itemize}
-          \end{itemize}}
-\cvitem{}{\begin{itemize}
+              \begin{itemize}
+                \item include games in an e-commerce app while having strict limitations on the app size
+                \item point in time load to backend servers for simultaneous games at very high scale
+                \item synchronize time between server and client so that every user playing \textit{Quiz Up} and \textit{Crazy Cannon} gets the exact same question/layout at the exact same time and the winners are calculated immediately after the game ends based on their scores
+                \item detect and avoid fraudulent behavior
+                \item collaboration between 3 teams including an external vendor for the UI part of core gameplay
+              \end{itemize}
             \item \textbf{Communication Platform}: This is the central platform via which we send all external communications to Flipkart users, sellers, etc through the channels of \textit{Push Notification}, \textit{Email},  \textit{SMS}, \textit{WhatsApp}, \textit{Web Push} and \textit{In App}. This is a extremely high scale project where we send upwards of 1 billion PNs and 80 million emails in a single day (during BBD). This system includes a \textit{Frequency Capping System} and \textit{Communication Preferences} that act as guardrails against user fatigue.
-          \end{itemize}}
-\cvitem{}{\begin{itemize}
-            \item \textbf{App Referrals}: This is the revival of an existing project that was taken down due to massive frauds. The revamp includes, besides better rules for fraud detection, development of a deferred incentivization policy via a state machine implementation.
-          \end{itemize}}
-\cvitem{}{\begin{itemize}
-            \item As the \textbf{Engineering Manager}, some of my core responsibilities include
+            \item \textbf{Other projects}
+            \begin{itemize}
+              \item Customer Referrals
+              \item Incentivized actions (aka Gamification)
+              \item Mystery box
+            \end{itemize}
+            \item As the Engineering Manager, some of my core responsibilities include
             \begin{itemize}
               \item define the project roadmap while working closely with the Product Manager
               \item split the roadmap into quarterly chunks to define the OKRs
               \item be responsible for the quality and timely delivery of OKR commitments
-              \item work with other teams to dependencies between projects
+              \item inter team dependency resolution
               \item help each team member to define their development goals and mentor and work with them to help them achieve the same
               \item calibrations and promotions
               \item hiring
@@ -139,14 +118,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 \section{Mindseed Preschool (Mumbai, India)}
 \cventry {16/Feb -- 18/Aug}{Head of Engineering}{}
          {Technology: Clojure/Clojurescript + MongoDB + Linode + Cordova + expo (react-native)}{Team size: 11}
-         {At Mindseed Preschool, the best preschool in India, we believe in personalizing education for every child. I was the first engineer in the company and built a team from scratch to build the whole eco-system to facilitate \textit{personalized learning} for each child. I also headed the ideation and development of a math based mobile game inspired by \textit{PokemonGo} (location awareness + Augmented Reality (AR)) using \textit{Unity3d} game engine and \textit{Python - Django} framework}
+         {At Mindseed Preschool, recognized as the \textit{Best Preschool and Daycare Chain in India} (\Colorhref{http://epaperbeta.timesofindia.com/Article.aspx?eid=31804&articlexml=City-preschool-wins-top-honours-26022017105028}{2017}, 2018 and  \Colorhref{https://www.theindianwire.com/education/india-education-awards-2019-organised-blindwink-18th-aug-soha-ali-khan-presents-award-162277/}{2019}), we believe in personalizing education for every child. I was the first engineer in the company and built a team from scratch to build the whole eco-system to facilitate \textit{personalized learning} for each child. I also headed the ideation and development of a math based mobile game inspired by \textit{PokemonGo} (location awareness + Augmented Reality (AR)) using \textit{Unity3d} game engine and \textit{Python - Django} framework}
 
 \section{Gryffin Software Development LLP (Mumbai, India)}
 \cventry {14/Apr -- 16/Jan}{Solopreneur}{}
          {}{Technology: Clojure + MongoDB + OpenShift + Bootstrap, Weka/Encog}
          {The project involves stock price prediction and portfolio creation using latest cutting edge machine learning technologies and functional programming techniques. I was successfully able to achieve about 95\% prediction accuracy for next day prices using the Weka toolkit. As a solopreneur, I had to look at all aspects of the project, both technical like ideation, implementation and testing, deployment, and others like registering the company, finance, advertising, etc.}
 
-% \newpage{}
+\newpage{}
 \section{Open Source Contributions}
 \cventry {}{\Colorhref{https://github.com/spradnyesh}{github.com/spradnyesh}}{}{}{}
          {\begin{itemize}
